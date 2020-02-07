@@ -7,10 +7,12 @@ import { NabvarComponent } from './components/nabvar/navbar.component';
 import { CarouselComponent } from './components/carusel/carusel.component';
 import { NuevasPeliculasComponent } from './components/nuevasPeliculas/nuevasPeliculas.component';
 import { ContenioInicioComponent } from './components/contenidoInicio/contenidoInicio.component';
+import { TopComponent } from './components/tops/tops.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
-    AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent
+    AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent,TopComponent,FooterComponent
   ],
   imports: [
     BrowserModule,

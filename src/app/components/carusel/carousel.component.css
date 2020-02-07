@@ -2,6 +2,14 @@
     width: 100%;
     height: 350px;
 }
+.centrar{
+    text-align: center;
+    color:#f7f8f9;
+}
+.espacio{
+    width: 100%;
+    height: 390px;
+}
 
 img{
     width: 100%;

@@ -1,0 +1,24 @@
+.more-margin{
+    margin-top: 4rem;
+}
+.text-color{
+    color: #f7f8f9;
+}
+.centrar:{
+    align-content: center;
+}
+img{
+    width:100%;
+    height: 200px;
+}
+
+.fondo-carta{
+    background-color: F7F8F9;
+}
+.color-texto{
+    color:#64655C;
+}
+.color-boton{
+    background-color:#F3A424 ;
+    color:#F7F8F9;
+}

@@ -1,5 +1,12 @@
 
 
 .fondo-container{
-    background-color: #a6884c;
+    background-color: rgb(139, 131, 123);
+    
+} 
+
+.fondo{
+    background-image: url("../assets/img/cinema.jpg");
+    background-attachment: fixed;
+     overflow: scroll;
 } 
