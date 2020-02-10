@@ -1,0 +1,38 @@
+<h3 class="text-center">Leave us your comment</h3>
+<section class="container">
+  <form #f="ngForm" (ngSubmit)="onSubmit()" class="row" >
+    <!-- <p>
+    <input type="text" #first="ngModel" name="Nombre" [(ngModel)]="comentario.userName" class="form-control"
+      placeholder="escribe">
+  </p>
+  <p>
+    <input type="text" #second="ngModel" name="comment" [(ngModel)]="comentario.comment" class="form-control"
+      placeholder="escribe">
+  </p> -->
+    <div class="form-row col-12 m-0 p-0" >
+      <div class="col-12 mb-2">
+        <input type=" text"  #first="ngModel" name="Nombre" [(ngModel)]="comentario.userName" class="form-control"
+          placeholder="Name">
+      </div>
+      <div class="form-group col-12">
+        <textarea class="form-control "  #second="ngModel" name="comment"
+          [(ngModel)]="comentario.comment" placeholder="Add a comment" rows="4"></textarea>
+      </div>
+
+      <div style="text-align: right;" class="col-12">
+        <input type="submit" value="Guardar" class="aling-self-right btn bg-warning text-dark">
+      </div>
+    </div>
+  </form>
+</section>
+<div class="list-group container mt-3">
+  <h3 class="text-center">Last comments</h3>
+  <section class="list-group-item list-group-item-action " *ngFor="let coment of nuevosComentarios">
+      <div class="mb-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 " style="text-align: left;">
+          <h5 class="mb-1 p-0" >{{coment.userName}}</h5>
+          <small class="mb-1 p-0">{{coment.date}}</small>
+      
+          <p class="mb-1 p-0">{{coment.comment}}</p>
+      </div>
+  </section>
+</div>

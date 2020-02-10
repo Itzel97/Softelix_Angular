@@ -1,4 +1,4 @@
-import {Component} from "@angular/core"
+import {Component, Input} from "@angular/core"
 
 @Component({
     selector:"app-top",
@@ -6,6 +6,7 @@ import {Component} from "@angular/core"
     styleUrls:["./tops.component.css"]
 })
 
-export class TopComponent{}
-    
+export class TopComponent{
+    @Input()titulo :string ="Tops";
+}    
 

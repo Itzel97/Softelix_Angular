@@ -1,0 +1,11 @@
+.like-count{
+  
+    height: 100%;
+    display: flex;
+}
+.likes-button{
+
+    height: 100%;
+    display: flex;
+    padding-left: 1rem;
+}

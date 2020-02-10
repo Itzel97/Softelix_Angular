@@ -1,0 +1,18 @@
+img{
+    width: 250px;
+    height: 350px;
+    align-self: center;
+}
+
+.more-padding{
+    padding-left: 4rem;
+}
+
+.movie-title{
+    font-family: 'Cabin Sketch', cursive;
+    font-size: 50px;
+}
+
+.new-font{
+    font-family: 'Quicksand', sans-serif;
+  }

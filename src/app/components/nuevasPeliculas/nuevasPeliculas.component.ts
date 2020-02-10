@@ -14,14 +14,14 @@ export class NuevasPeliculasComponent{
 
     constructor(){
         this.peliculas= [
-            new Pelicula (this.pic,"Movie Name", 2020, "#"),
-            new Pelicula (this.pic,"Movie Name", 2020, "#"),
-            new Pelicula (this.pic,"Movie Name", 2020, "#"),
-            new Pelicula (this.pic,"Movie Name", 2020, "#"),
-            new Pelicula (this.pic,"Movie Name", 2020, "#"),
-            new Pelicula (this.pic,"Movie Name", 2020, "#"),
-            new Pelicula (this.pic,"Movie Name", 2020, "#"),
-            new Pelicula (this.pic,"Movie Name", 2020, "#"),
+            new Pelicula (this.pic,"Movie Name", 2020, "#","Action"),
+            new Pelicula (this.pic,"Movie Name", 2020, "#","Action"),
+            new Pelicula (this.pic,"Movie Name", 2020, "#","Action"),
+            new Pelicula (this.pic,"Movie Name", 2020, "#","Action"),
+            new Pelicula (this.pic,"Movie Name", 2020, "#","Action"),
+            new Pelicula (this.pic,"Movie Name", 2020, "#","Action"),
+            new Pelicula (this.pic,"Movie Name", 2020, "#","Action"),
+            new Pelicula (this.pic,"Movie Name", 2020, "#","Action")
         ]
     }
 

@@ -3,7 +3,8 @@ export class Pelicula {
         private pic:string,
         private title:string,
         private year:number,
-        private ref:string
+        private ref:string,
+        public gener:string
     ){
 
     }

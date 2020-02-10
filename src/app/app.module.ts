@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-
+import { NgModule } from "@angular/core";
+import { FormsModule } from "@angular/forms";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NabvarComponent } from './components/nabvar/navbar.component';
@@ -9,16 +9,20 @@ import { NuevasPeliculasComponent } from './components/nuevasPeliculas/nuevasPel
 import { ContenioInicioComponent } from './components/contenidoInicio/contenidoInicio.component';
 import { TopComponent } from './components/tops/tops.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { PeliculaComponent } from './components/pelicula/pelicula.component';
+import { LikeComponent } from './components/like/like.component';
+import { ComentariosComponent } from './components/comentarios/comentarios.component';
+import { MoviesService } from './services/movies/movie.service';
+import { GeneroComponent } from './components/generos/generos.component';
 
 @NgModule({
   declarations: [
-    AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent,TopComponent,FooterComponent
-  ],
+    AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent,TopComponent, FooterComponent, PeliculaComponent, LikeComponent, ComentariosComponent, GeneroComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, FormsModule
   ],
-  providers: [],
+  providers: [MoviesService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
