@@ -13,11 +13,6 @@ export class ComentariosComponent implements OnInit{
     constructor(){
         this.comentario = new Comentario ("","", new Date)
 
-        this.nuevosComentarios=[
-            new Comentario("Prueba1"," Este es un comentario", new Date),
-            
-        ]
-
     }
     ngOnInit() {}
 

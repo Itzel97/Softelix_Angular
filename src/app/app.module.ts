@@ -14,13 +14,14 @@ import { LikeComponent } from './components/like/like.component';
 import { ComentariosComponent } from './components/comentarios/comentarios.component';
 import { MoviesService } from './services/movies/movie.service';
 import { GeneroComponent } from './components/generos/generos.component';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 
 @NgModule({
   declarations: [
     AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent,TopComponent, FooterComponent, PeliculaComponent, LikeComponent, ComentariosComponent, GeneroComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule
+    AppRoutingModule, FormsModule, SlickCarouselModule
   ],
   providers: [MoviesService],
   bootstrap: [AppComponent]

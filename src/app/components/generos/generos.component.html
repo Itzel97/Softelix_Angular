@@ -1,10 +1,24 @@
-<section class="row pt-3">
- <h2 style="text-align:center;">Gener: {{title}}</h2>
-<article class="container">
-    <section class="row">
-        <div class="col-3">
+<!--Componente que se mostrará por género de película
+  **razón principal** en vez de hacer muchos templates 
+    por hoja de género, es más optimo un carrusel para tódas las películas
+     de ese género-->
+<h3 class="title-gener">{{title}}</h3>
+<section class="regular slider pt-2 padding-bot" style="direction:ltr; text-align: center;">
+  <div *ngFor="let pelicula of peliculas" class="m-1 efecto pt-3">
+    <a href="">
+      <img src="{{pelicula.pic}}" class="card-img-top" alt="{{pelicula.title}}" title="{{pelicula.title}}">
+    </a>
+  </div>
+</section> 
 
-        </div>
-    </section>
-</article>
-</section>
+<!-- <div *ngFor="let pelicula of peliculas" class="m-1 efecto pt-3">
+  <a href="">
+      <img src="{{pelicula.pic}}" class="card-img-top" alt="{{pelicula.title}}" title="{{pelicula.title}}">
+      <div class="data-movie">
+        {{pelicula.title}}
+      </div>
+    </a>
+</div> -->
+
+
+ 
