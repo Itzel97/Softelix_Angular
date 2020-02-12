@@ -12,7 +12,7 @@ export class ComentariosComponent implements OnInit{
     public nuevosComentarios:Array<any>;
     constructor(){
         this.comentario = new Comentario ("","", new Date)
-        this.nuevosComentarios =[ this.comentario ]
+        this.nuevosComentarios =[ new Comentario("Dante Castillo", "Una película muy divertida , la recomiendo muchisimo, buenos efectos y magnífico soundtrack!!" , new Date) ]
 
     }
 
@@ -22,6 +22,5 @@ export class ComentariosComponent implements OnInit{
         this.nuevosComentarios.push( this.comentario)
         return this.nuevosComentarios
         console.log(this.nuevosComentarios)
-
     }
 }

@@ -31,9 +31,9 @@
   <section class="list-group-item list-group-item-action " *ngFor="let coment of nuevosComentarios">
     <div class="mb-1 col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 p-0 " style="text-align: left;">
       <h5 class="mb-1 p-0">{{coment.userName}}</h5>
-      <small class="mb-1 p-0">{{coment.date}}</small>
+      <small class="mb-1 p-0" style="text-align: right;">{{coment.date}}</small>
 
-      <p class="mb-1 p-0">{{coment.comment}}</p>
+      <p class="mb-1 p-0 mt-2">{{coment.comment}}</p>
     </div>
   </section>
 </div>

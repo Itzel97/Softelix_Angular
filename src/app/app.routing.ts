@@ -14,7 +14,7 @@ const appRoutes: Routes = [
     { path:"register", component:NewUserAccountComponent},
     { path: "action", component: GeneroComponent},
     { path: "next-releases", component: NuevasPeliculasComponent},
-    { path: "birds-of-prey", component: PeliculaComponent},
+    { path: "bad-boys", component: PeliculaComponent},
     { path: "**", component: ContenioInicioComponent },
 
   ];

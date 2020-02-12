@@ -20,6 +20,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { LogInComponent} from './components/logIn/logIn.component';
 import { NewUserAccountComponent } from './components/newUserAccount/newUserAccount.component';
 
+
 @NgModule({
   declarations: [
     AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent,TopComponent, FooterComponent, PeliculaComponent, LikeComponent, ComentariosComponent, GeneroComponent, LogInComponent,NewUserAccountComponent],
