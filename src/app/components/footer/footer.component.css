@@ -1,53 +1,68 @@
-.contact-info{
-   /*  background-color:lightseagreen; */
-    height: 200px;
-}
-.contactUs{
-    font-size: 40px;
-}
-.map-info{
-   /*  background-color: limegreen; */
-    height: 200px;
-    
-}
-.iconos{
-    width: 100%;
-    
-}
-img{
-width: 50px;
-height: 50px;
+.contact-info {
+  /*  background-color:lightseagreen; */
+  height: 200px;
 }
 
-header{
-    width: 100%;
-    height: 33%;
-    /* background-color: lightsalmon; */
-    font-family: 'Quicksand', sans-serif;
+.contactUs {
+  font-size: 40px;
 }
-main{
-    /* background-color: lightskyblue; */
-    width: 100%;
-    height: 33%;
-    font-family: 'Quicksand', sans-serif;
+
+.map-info {
+  /*  background-color: limegreen; */
+  height: 200px;
+
 }
-footer{
-    /* background-color: lightgreen; */
-    width: 100%;
-    height: 33%;
-    font-family: 'Quicksand', sans-serif;
+
+.iconos {
+  width: 100%;
+
 }
-.adress-info{
-    /* background-color: maroon; */
-    width: 50%;
-    height: 100%; 
-    font-family: 'Quicksand', sans-serif;
-    float: left;
+
+img {
+  width: 50px;
+  height: 50px;
 }
-.google-map{
-    /* background-color: burlywood; */
-    width: 50%;
-    height: 100%;
-    float: left;
-  
+
+header {
+  width: 100%;
+  height: 33%;
+  /* background-color: lightsalmon; */
+  font-family: 'Quicksand', sans-serif;
+}
+
+main {
+  /* background-color: lightskyblue; */
+  width: 100%;
+  height: 33%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+footer {
+  /* background-color: lightgreen; */
+  width: 100%;
+  height: 33%;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.adress-info {
+  /* background-color: maroon; */
+  width: 50%;
+  height: 100%;
+  font-family: 'Quicksand', sans-serif;
+  float: left;
+}
+
+.google-map {
+  /* background-color: burlywood; */
+  width: 50%;
+  height: 100%;
+  float: left;
+
+}
+
+
+.efecto:hover {
+ transition: transform 500ms;
+  opacity: 0.7;
+  transform: translateY(-5px);
 }

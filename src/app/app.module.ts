@@ -18,10 +18,11 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { routing, appRoutingProviders } from "./app.routing";
 import { HttpClientModule } from "@angular/common/http";
 import { LogInComponent} from './components/logIn/logIn.component';
+import { NewUserAccountComponent } from './components/newUserAccount/newUserAccount.component';
 
 @NgModule({
   declarations: [
-    AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent,TopComponent, FooterComponent, PeliculaComponent, LikeComponent, ComentariosComponent, GeneroComponent, LogInComponent],
+    AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent,TopComponent, FooterComponent, PeliculaComponent, LikeComponent, ComentariosComponent, GeneroComponent, LogInComponent,NewUserAccountComponent],
   imports: [
     BrowserModule,
     AppRoutingModule, FormsModule, SlickCarouselModule,routing,HttpClientModule

@@ -1,0 +1,38 @@
+.more-margin{
+    margin-top: 4rem;
+}
+.centrar{
+    align-content: center;
+}
+.encabezado-login{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*font-family: 'Russo One', sans-serif;
+   font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Fontdiner Swanky', cursive;
+  font-family: 'Baloo Bhaijaan', cursive; */
+.title-text{
+    font-family: 'Fontdiner Swanky', cursive;
+    
+}
+.text-font{
+    font-family: 'Cabin Sketch', cursive;
+}
+.logo
+{
+ align-content: center;
+}
+.fondo-carta{
+    background-color: F7F8F9;
+}
+.text-color{
+    color:#64655C;
+}
+.color-boton{
+    background-color:#F3A424 ;
+    color:#F7F8F9;
+}

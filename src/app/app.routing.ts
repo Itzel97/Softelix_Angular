@@ -5,9 +5,13 @@ import{NuevasPeliculasComponent} from "./components/nuevasPeliculas/nuevasPelicu
 import{PeliculaComponent} from "./components/pelicula/pelicula.component";
 import{ContenioInicioComponent} from "./components/contenidoInicio/contenidoInicio.component";
 import{GeneroComponent} from"./components/generos/generos.component";
-import {LogInComponent} from "../app/components/logIn/logIn.component"
+import {LogInComponent} from "../app/components/logIn/logIn.component";
+import {NewUserAccountComponent} from "../app/components/newUserAccount/newUserAccount.component";
+
 const appRoutes: Routes = [
     { path: "", component: ContenioInicioComponent },
+    { path: "login", component: LogInComponent },
+    { path:"register", component:NewUserAccountComponent},
     { path: "action", component: GeneroComponent},
     { path: "next-releases", component: NuevasPeliculasComponent},
     { path: "birds-of-prey", component: PeliculaComponent},

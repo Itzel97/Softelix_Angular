@@ -1,0 +1,80 @@
+
+.more-margin{
+    margin-top: 4rem;
+}
+.centrar{
+    align-content: center;
+}
+.encabezado-login{
+    width: 100%;
+    height: 100%;
+}
+.fondo-carta{
+    background-color: rgb(153, 106, 106);
+    border: none;
+}
+/*font-family: 'Russo One', sans-serif;
+   font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Cabin Sketch', cursive;
+  font-family: 'Fontdiner Swanky', cursive;
+  font-family: 'Baloo Bhaijaan', cursive; */
+.title-text{
+    font-family: 'Fontdiner Swanky', cursive;
+    
+}
+.text-font{
+    font-family: 'Cabin Sketch', cursive;
+}
+.logo
+{
+ align-content: center;
+}
+/* .fondo-carta{
+    background-color: F7F8F9;
+} */
+.text-color{
+    color:#64655C;
+}
+.text-link{
+    color:rgb(214, 221, 228);
+}
+.color-boton{
+    background-color:#F3A424 ;
+    color:#F7F8F9;
+    border: none;
+}
+
+.color-boton:hover{
+    background-color:rgb(184, 124, 29) ;
+}
+
+.divider-text {
+    position: relative;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.divider-text span {
+    padding: 7px;
+    font-size: 12px;
+    position: relative;   
+    z-index: 2;
+}
+.divider-text:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 1px solid #ddd;
+    top: 55%;
+    left: 0;
+    z-index: 1;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+.btn-twitter {
+    background-color: #42AEEC;
+    color: #fff;
+}

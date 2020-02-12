@@ -17,7 +17,7 @@ export class NuevasPeliculasComponent implements OnInit{
         this._MoviesService.getPeliculas().subscribe(
             pelicula => {
                 this.peliculas = pelicula;
-                console.log("juegos", pelicula);
+                console.log("Peliculas: ", this.peliculas);
     },
     error => {
         console.log(error);
