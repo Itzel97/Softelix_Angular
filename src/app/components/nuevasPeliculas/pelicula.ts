@@ -1,11 +1,12 @@
-export class Pelicula {
+export class Movie{
+    
     constructor(
-        private pic:string,
-        private title:string,
-        private year:number,
-        private ref:string,
-        public gener:string
-    ){
-
-    }
+        movie_Id:number,
+        pic:string,
+        title:string,
+        year:string,
+        country_Id:number,
+        classification_Id:number
+    
+    ){}
 }

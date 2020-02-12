@@ -6,19 +6,10 @@
 <section class="regular slider pt-2 padding-bot" style="direction:ltr; text-align: center;">
   <div *ngFor="let pelicula of peliculas" class="m-1 efecto pt-3">
     <a href="">
-      <img src="{{pelicula.pic}}" class="card-img-top" alt="{{pelicula.title}}" title="{{pelicula.title}}">
+      <img src="../../../assets/img/portadas/{{pelicula.pic}}.jpg" class="card-img-top" alt="{{pelicula.title}}" title="{{pelicula.title}}">
     </a>
   </div>
 </section> 
-
-<!-- <div *ngFor="let pelicula of peliculas" class="m-1 efecto pt-3">
-  <a href="">
-      <img src="{{pelicula.pic}}" class="card-img-top" alt="{{pelicula.title}}" title="{{pelicula.title}}">
-      <div class="data-movie">
-        {{pelicula.title}}
-      </div>
-    </a>
-</div> -->
 
 
  

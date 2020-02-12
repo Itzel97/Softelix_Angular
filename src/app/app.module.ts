@@ -15,15 +15,18 @@ import { ComentariosComponent } from './components/comentarios/comentarios.compo
 import { MoviesService } from './services/movies/movie.service';
 import { GeneroComponent } from './components/generos/generos.component';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { routing, appRoutingProviders } from "./app.routing";
+import { HttpClientModule } from "@angular/common/http";
+import { LogInComponent} from './components/logIn/logIn.component';
 
 @NgModule({
   declarations: [
-    AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent,TopComponent, FooterComponent, PeliculaComponent, LikeComponent, ComentariosComponent, GeneroComponent],
+    AppComponent, NabvarComponent, CarouselComponent, NuevasPeliculasComponent, ContenioInicioComponent,TopComponent, FooterComponent, PeliculaComponent, LikeComponent, ComentariosComponent, GeneroComponent, LogInComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule, FormsModule, SlickCarouselModule
+    AppRoutingModule, FormsModule, SlickCarouselModule,routing,HttpClientModule
   ],
-  providers: [MoviesService],
+  providers: [MoviesService, appRoutingProviders],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
