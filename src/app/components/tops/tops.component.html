@@ -1,93 +1,18 @@
+<!--TOP COMPONENT-->
+<!-- TIENE COMO OBJETIVO GENERAR LOS NOMBRES DE LAS MEJORES PELICULAS-->
 <h3 class="text-center">{{titulo}}</h3>
 <article class="row">
   <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
     <ul class="list-group ">
-      <a href="bad-boys" *ngFor="let pelicula of peliculas">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          {{pelicula.title}}
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
+      <a href="bad-boys" *ngFor="let pelicula of peliculas; let i=index">
+        <div *ngIf="i<15">
+          <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
+            {{pelicula.title}}
+            <span class=" badge badge-primary badge-pill numero-fondo">14</span>
+          </li>
+        </div>
       </a>
-
-      <!-- <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
-      <a href="#">
-        <li class=" fondo list-group-item d-flex justify-content-between align-items-center">
-          Cras justo odio
-          <span class=" badge badge-primary badge-pill numero-fondo">14</span>
-        </li>
-      </a>
- -->
     </ul>
   </div>
 </article>
+<!--TOP COMPONENT-->

@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
 
-
+<!--COMPONENTE DE CREAR NUEVA CUENTA DE USUARIO-->
+<!-- TIENE COMO OBJETIVO CAPTIRAR LA INFORMACIÓN PARA PODER CREAR UNA NUEVA CUENTA DE USUARIO,
+      CON UN FORM EN DONDE EN CADA INPUT PUEDA EL USUARIO INGRESAR LA INFORMACIÓN-->
 <div class="container mb-3">
 
   <hr>
@@ -9,8 +11,8 @@
       <h4 class="card-title mt-3 text-center title-text">Create Account</h4>
       <p class="text-center">Get started with your free account</p>
       <p>
-        <!-- <a href="" class="btn btn-block btn-twitter"> <i class="fab fa-twitter"></i>   Login via Twitter</a> -->
-        <a href="" class="btn btn-block btn-facebook" ng-click="authenticateExternalProvider('Facebook')"> <i class="fab fa-facebook-f"></i>   Login via facebook</a>
+        <a href="" class="btn btn-block btn-facebook" ng-click="authenticateExternalProvider('Facebook')"> <i
+            class="fab fa-facebook-f"></i>   Login via facebook</a>
       </p>
       <p class="divider-text">
         <span class="fondo-carta ">OR</span>
@@ -20,57 +22,21 @@
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-user"></i> </span>
           </div>
-          <input name="" class="form-control" placeholder="Full name" type="text">
+          <input name="" class="form-control" placeholder="Username" type="text">
         </div> <!-- form-group// -->
-        <div class="form-group input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-envelope"></i> </span>
-          </div>
-          <input name="" class="form-control" placeholder="Email address" type="email">
-        </div> <!-- form-group// -->
-        <!--  <div class="form-group input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-phone"></i> </span>
-          </div>
-          <select class="custom-select" style="max-width: 120px;">
-            <option selected="">+971</option>
-            <option value="1">+972</option>
-            <option value="2">+198</option>
-            <option value="3">+701</option>
-          </select>
-          <input name="" class="form-control" placeholder="Phone number" type="text">
-        </div> -->
-        <!-- form-group// -->
-        <!-- <div class="form-group input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-building"></i> </span>
-          </div>
-          <select class="form-control">
-            <option selected=""> Select job type</option>
-            <option>Designer</option>
-            <option>Manager</option>
-            <option>Accaunting</option>
-          </select>
-        </div> -->
-        <!-- form-group end.// -->
         <div class="form-group input-group">
           <div class="input-group-prepend">
             <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
           </div>
           <input class="form-control" placeholder="Create password" type="password">
         </div> <!-- form-group// -->
-        <div class="form-group input-group">
-          <div class="input-group-prepend">
-            <span class="input-group-text"> <i class="fa fa-lock"></i> </span>
-          </div>
-          <input class="form-control" placeholder="Repeat password" type="password">
-        </div> <!-- form-group// -->
+        <!-- form-group// -->
         <div class="form-group">
-          <button type="submit" class="btn  btn-block color-boton"> Create Account </button>
+          <button type="submit" class="btn  btn-block color-boton" (click)="SaveAccount()"> Create Account </button>
         </div> <!-- form-group// -->
-        <p class="text-center">Have an account? 
-            <app-login></app-login><a href=""
-            class=" text-link" data-toggle="modal" data-target="#modalLoginForm">Log In</a>
+        <p class="text-center">Have an account?
+          <app-login></app-login><a href="" class=" text-link" data-toggle="modal" data-target="#modalLoginForm">Log
+            In</a>
         </p>
       </form>
     </article>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Softelix</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Se importaron librerias para utilizar boostrap y slick-->
+  <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan|Cabin+Sketch|Fontdiner+Swanky|Rubik+Mono+One|Russo+One&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../../../assets/slick-1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="../../../assets/slick-1.8.1/slick/slick-theme.css">
+</head>
+
+<!--la clase "bg-dark" sirve para darle un color de fodo al cuerpo de la página  -->
+
+<body class="bg-dark">
+  <!--Aqui se manda a llamar el componente root-->
+  <app-root></app-root>
+
+
+  <!--Se importaron librerias para utilizar boostrap y slick -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script src="../../../assets/slick-1.8.1/slick/slick.min.js"></script>
+
+
+  <!--Este scrip sirve para ejecutar el carrusel de géneros de pelicula,
+    se opto por poner aqui por la dificultad ya que es Jquery, se importaron archivos
+    de una libreria llamada SLICK la cual contiene funciones que nos permiten generar
+    caruseles con items multiples
+  -->
+  <script type="text/javascript">
+    $(document).on('ready', function () {
+      /*Aqui en $Document lo que hace es que ejecutara el programa, hasta que el documento
+      este cargado, en la programa llamamos nuestro " class" que se ubica en le etiqueta 
+      de nuestro componente "genero" y contiene propiedades que provienen de "slick.min.js*/
+      $(".regular").slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        /* pauseOnHover: true, */
+
+        /*Responsive sirve para crear objetos los cuales contienen propiedades
+        que nos ayudan a hacer responsivo nuestro carrusel, "breakpoint" es el tamano de la 
+        pantalla la unidad es en PX asi que apartir de esa cantidad, los slides que mostrará
+        el carrusel seran solo 4 y se mueven dos items por cada scroll , debemos especificar
+        todos los anchos de la página que ceramos relevantes*/
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 990,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            }
+          },
+          {
+            breakpoint: 800,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 500,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          },
+
+        ]
+      });
+    });
+
+  </script>
+</body>
+
+</html>
